@@ -3,33 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harrison's Homicidal Homigrad</title>
+    <title>Tabbed Website with Blurred Video Background</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
+        @font-face {
+            font-family: 'Emery';
+            src: url('fonts/emery.ttf') format('truetype');
         }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Hide scrollbars */
+        }
+
+        /* Fullscreen video background */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover; /* Makes sure the video covers the background */
+            filter: sepia(100%) saturate(1000%) hue-rotate(-50deg) blur(10px); /* Apply blur to the video */
+            transform: scale(1.1); /* Slightly scale up to hide video edges after blur */
+        
         }
 
         nav {
-            background-color: #444;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
             padding: 10px;
             text-align: center;
+            border-bottom: 1px solid #ccc;
         }
 
         nav a {
-            color: white;
+            color: #333;
             padding: 14px 20px;
             text-decoration: none;
             display: inline-block;
+            font-weight: bold;
         }
 
         nav a:hover {
@@ -37,16 +52,49 @@
             color: black;
         }
 
-        section {
-            padding: 20px;
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow to improve readability */
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Emery', Arial, sans-serif;
+            font-size: 6rem;
+            letter-spacing: 6px;
+        }
+
+        .server-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .server-info img {
+            width: auto;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .server-info p {
+            font-size: 1.2rem;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Harrison's Homicidal Homigrad</h1>
-</header>
+<!-- Video Background -->
+<video id="bg-video" autoplay muted loop>
+    <source src="videos/static.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 <nav>
     <a href="index.html">Home</a>
@@ -54,10 +102,15 @@
     <a href="contacts.html">Contacts & Staff</a>
 </nav>
 
-<section>
-    <h2>Home Page</h2>
-    <p>This is the home page content.</p>
-</section>
+<div class="center-content">
+    <h1>Harrison's Homicidal Homigrad</h1>
+
+    <div class="server-info">
+        <p>Australian Server: 103.16.131.84:27015</p>
+        <p><img src="flags/gb.png" alt="UK Flag"> [Coming Soon]</p>
+        <p><img src="flags/us.png" alt="US Flag"> [Coming 2025]</p>
+    </div>
+</div>
 
 </body>
 </html>
