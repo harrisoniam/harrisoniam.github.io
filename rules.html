@@ -12,7 +12,6 @@
     <meta property="og:image" content="https://www.harrisonshomigrad.com/images/picture.png">
     <meta content="#ff1a1a" data-react-helmet="true" name="theme-color" />
 
-
     <style>
         @font-face {
             font-family: 'Emery';
@@ -68,10 +67,10 @@
         }
 
         .content {
-            flex-grow: 1;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: flex-start;
+            flex-wrap: wrap;
             padding: 20px;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow to improve readability */
@@ -85,7 +84,8 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             max-width: 600px;
-            width: 100%;
+            width: 45%; /* Adjust width so two divs fit side by side */
+            margin: 10px;
         }
 
         h1 {
@@ -125,24 +125,25 @@
 <nav>
     <a href="index.html">Home</a>
     <a href="rules.html">Rules</a>
+    <a href="controls.html">Homigrad Controls</a>
     <a href="contacts.html">Contacts & Staff</a>
 </nav>
 
 <div class="content">
     <div class="rules">
-        <h1>Server Rules</h1>
-        <h3 style="text-align: center;">By playing on our server, you hereby agree to follow and respect these rules.</h3>
+        <h1>General Rules</h1>
+        <h3 style="text-align: center;">In-case you left your brain at the door; </h3>
         <ol>
+            <li><strong>No use of Slurs are permitted.</strong> Terms such as Faggot, Nigger/Nigga, Dyke, Gook, etc, are strictly prohibited, no matter the context.</li>
             <li><strong>Respect All Players:</strong> Treat everyone with respect. Harassment, hate speech, or personal attacks will not be tolerated.</li>
             <li><strong>Stay Inbounds:</strong> Do not abuse mechanics to get out of bounds on maps.</li>
             <li><strong>No Exploiting:</strong> Do not exploit bugs or glitches in the game. Report any issues to the server admins instead.</li>
             <li><strong>Follow Server Admin Instructions:</strong> Always listen to the admins and moderators. Their word is final.</li>
-            <li><strong>No RDM:</strong> Killing other players without a valid reason is prohibited. Roleplay interactions must be meaningful.</li>
+            <li><strong>No RDM:</strong> Killing other players without a valid reason is prohibited. Roleplay interactions are must be meaningful.</li>
             <li><strong>No Teamkilling:</strong> Do not kill your teammates.</li>
+            <li><strong>No Revenge RDM:</strong> If you are RDM'd, do not attempt to RDM the player back. Report it to an admin.</li>
             <li><strong>No Griefing:</strong> Avoid behavior that disrupts the game experience for others, including excessive mic spam, downing players for no reason, or other forms of trolling.</li>
             <li><strong>No Metagaming:</strong> Do not use knowledge gained from out-of-character sources (Private Voice-chats/Direct Messages) to influence your in-game decisions.</li>
-            <li><strong>No Revenge RDM:</strong> If you are RDM'd, do not attempt to RDM the player back. Report it to an admin.</li>
-            <li><strong>Stay Inbounds:</strong> Do not abuse mechanics to get out of bounds on maps.</li>
         </ol>
         <p class="warning">
             <strong>Failure to adhere to these rules may result in warnings, temporary bans, or permanent bans at the discretion of the admins.</strong>
