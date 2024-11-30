@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleplay</title>
+    <meta name="description" content="Information about the roleplay aspects of the server.">
+
+    <style>
+        /* Fullscreen GIF background */
+        #bg-gif {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            filter: blur(2px) brightness(0.3); /* Apply blur and reduce brightness */
+            transform: scale(1.05); /* Slightly scale up to hide edges after blur */
+        }
+
+        /* Red tint overlay */
+        .red-tint {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.053); /* Apply red tint */
+            z-index: -1;
+        }
+
+        /* General styles for the body */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center; /* Horizontally center the content */
+            align-items: center; /* Vertically center the content */
+            text-align: center;
+            color: white; /* White text color */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Content container */
+        .center-content {
+            z-index: 1; /* Ensure the content appears above the background */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            max-width: 650px;
+            width: 90%;
+        }
+
+        /* Header style */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+        }
+
+        /* Paragraph style */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ffffff;
+        }
+        br {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 25px; /* change this to whatever height you want it */
+         }
+         
+         .newlinebr {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 5px; /* change this to whatever height you want it */
+         }
+
+         .red-text {
+            color: #ff0000; /* Bright red */
+        }
+    </style>
+</head>
+<body>
+
+<!-- GIF Background -->
+<img id="bg-gif" src="https://68.media.tumblr.com/595a5fa01fe53ca0e4ca8f37bacc849d/tumblr_nve67mJtue1tanofjo1_500.gif" alt="Background GIF">
+
+<!-- Red Tint Overlay -->
+<div class="red-tint"></div>
+
+<!-- Center Content -->
+<div class="center-content">
+    <h1>This Is Homigrad</h1>
+    <h2>> The way it was meant to be played.</h2>
+    <p>Homigrad was created with the intent for players to roleplay and react to the world realistically as it changed and evolved around them. <strong><br class="newlinebr">This server enforces it.</strong></p>
+    <h1 class="red-text"><strong>You are REQUIRED to<br class="newlinebr">roleplay your Character.</strong></h1>
+    <br>
+    <p>
+        Scream in agony from the wounds given to your character, weep the loss of a friend that you gained during the round, and act accordingly with what's happening around you and to the world.
+    </p>
+    <br>
+    <h3 class="red-text"><strong>
+        If roleplay does not interest you, please play on one of our other servers, where roleplay is not enforced. 
+    </h3></strong>
+</div>
+
+</body>
+</html>
