@@ -1,0 +1,195 @@
+/* Global */
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: "Zalando Sans SemiExpanded", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+  
+  
+
+  /* Typography (slightly larger headers) */
+  main h1 {
+    font-size: 2.25rem;
+    line-height: 1.15;
+    margin: 0 0 0.9rem 0;
+  }
+
+  main h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin: 2rem 0 0.85rem 0;
+  }
+
+  /* Lists (more breathing room) */
+  main ul,
+  main ol {
+    margin: 1.1rem 0 1.6rem 0;
+    padding-left: 1.25em;
+  }
+
+  main ul li,
+  main ol li {
+    margin: 0.65rem 0;
+    line-height: 1.55;
+  }
+a {
+    color: inherit;
+  }
+  
+  /* Navbar (transparent / no background, centered at the top) */
+  nav {
+    background: transparent;
+    padding: 12px 16px;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  
+  nav a,
+  nav summary {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  nav a:hover,
+  nav summary:hover {
+    text-decoration: underline;
+  }
+  
+  nav hr {
+    display: none;
+  }
+  
+  /* Dropdown */
+  details {
+    position: relative;
+  }
+  
+  details > summary {
+    list-style: none;
+  }
+  
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details ul {
+    list-style: none;
+    margin: 8px 0 0 0;
+    padding: 8px 10px;
+  
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    border: 1px solid #444;
+    background: transparent; /* no background */
+  }
+  
+  details ul li {
+    margin: 6px 0;
+    white-space: nowrap;
+  }
+  
+  /* Icons next to dropdown item titles */
+  .icon {
+    display: inline-block;
+    width: 1.2em;
+    margin-right: 0.35em;
+    text-align: center;
+  }
+  
+  /* Images */
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Home page: center image + paragraphs horizontally and vertically */
+  body.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body.home main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* horizontal centering */
+    justify-content: center;  /* vertical centering */
+    text-align: center;
+  }
+  
+  body.home main section {
+    max-width: 700px;
+  }
+
+  /* Prevent the home logo from being squished */
+    .home-logo {
+        width: 640px;      /* adjust as you like */
+        max-width: 160vw;   /* responsive */
+        height: auto;      /* keeps aspect ratio */
+        object-fit: contain;
+    }
+  
+    .page-title {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+      }
+      
+      .title-icon {
+        width: 48px;   /* adjust size */
+        height: auto;  /* prevents squishing */
+        display: block;
+      }
+
+      
+      html,
+      body {
+        height: 100%;
+      }
+      
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      footer {
+        margin-top: auto;       /* keeps footer at the bottom */
+        text-align: center;     /* center the text */
+        opacity: 0.25;          /* 25% opacity */
+        padding: 0 0 12px 0;    /* slightly above bottom */
+      }
+/* Put the icon above the H1 text */
+main h1.page-title{
+    display: flex;
+    flex-direction: column;  /* stack vertically */
+    align-items: center;     /* center icon + text */
+    gap: 12px;               /* space between icon and text */
+  }
+  
+  main h1.page-title .title-icon{
+    width: 48px;   /* keep your preferred size */
+    height: auto;
+  }
+  
